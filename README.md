@@ -60,11 +60,11 @@ In this project, you will deploy a static website to AWS by performing the follo
 
 ## Table of Contents
 
-### The Study Plan
-
 - [Create S3 Bucket](#create-s3-bucket)
 - [Upload files to S3 Bucket](#upload-files-to-s3-bucket)
 - [Secure Bucket via IAM](#secure-bucket-via-iam)
 - [Configure S3 Bucket](#configure-s3-bucket)
 - [Distribute Website via CloudFront](#distribute-website-via-cloudfront)
 - [Access Website in Web Browser](#access-website-in-web-browser)
+
+### Create S3 Bucket
