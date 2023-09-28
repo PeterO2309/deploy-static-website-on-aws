@@ -60,7 +60,7 @@ In this project, you will deploy a static website to AWS by performing the follo
 
 ## Table of Contents
 
-- [Create S3 Bucket](#create-s3-bucket)
+- [Create S3 Bucket](#https://github.com/PeterO2309/deploy-static-website-on-aws/tree/main#create-s3-bucket) 
 - [Upload files to S3 Bucket](#upload-files-to-s3-bucket)
 - [Secure Bucket via IAM](#secure-bucket-via-iam)
 - [Configure S3 Bucket](#configure-s3-bucket)
@@ -68,3 +68,4 @@ In this project, you will deploy a static website to AWS by performing the follo
 - [Access Website in Web Browser](#access-website-in-web-browser)
 
 ### Create S3 Bucket
+dgasegeg
