@@ -79,7 +79,7 @@ In this project, you will deploy a static website to AWS by performing the follo
 
 3. In the **General configuration**, enter a “Bucket name” and a region of your choice. Note: Bucket names must be globally unique.
 
-   <img width="608" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/a38edaa3-3b7e-426c-b0dd-34df810f97b7">
+<img width="533" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/30dccca8-98a0-4773-839a-1ce0ab222490">
    
 
 4. In the **Bucket settings for Block Public Access** section, uncheck the “Block all public access”. It will enable the public access to the bucket objects via the S3 object URL.
