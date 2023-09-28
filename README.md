@@ -266,7 +266,35 @@ In the snapshot above, it says "For your customers to access the content at the 
 In this example, the Domain Name value is ```dgf7z6g067r6d.cloudfront.net```, but _**yours will be different.**_
 
 
+
 ## Access Website in Web Browser
 
+> **Note** - In the steps below, the exact domain name and the S3 URLs will be different in your case.
 
+
+1. Open a web browser like Google Chrome, and paste the copied CloudFront domain name (such as ```dgf7z6g067r6d.cloudfront.net```) **without appending** /index.html at the end. The CloudFront domain name should show you the content of the default home-page, as shown below:
+
+<img width="551" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/12944fe5-9374-46be-bb5e-5b240c9368ae">
+
+
+2. Access the website via website-endpoint, such as
+   ```http://<bucket-name>.s3-website.us-east-2.amazonaws.com/```.
+
+
+3. Access the bucket object via its S3 object URL, such as,
+  ```https://<bucket-name>.s3.amazonaws.com/index.html```.
+
+
+All three links: CloudFront domain name, S3 object URL, and website-endpoint will show you the same `index.html` content.
+
+> **If we were not "hosting" the website on S3, we could have made the bucket private and host the content only through the CloudFront domain name. In such a case, we cannot access the private content using S3 object URL and website-endpoint.**
+
+
+### Troubleshooting Tip
+1. After completing the project instructions, if you are unable to view the website contents, refer to the following guide: <a href="https://aws.amazon.com/premiumsupport/knowledge-center/s3-website-cloudfront-error-403/">I’m using an S3 website endpoint as the origin of my CloudFront distribution. Why am I getting 403 Access Denied errors?</a>
+
+2. Refer to this official tutorial <a href="https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-serve-static-website/">Using a website endpoint as the origin, with anonymous (public) access allowed</a>, and verify if you have used the correct domain for your distribution. It should essentially be the Static website hosting endpoint of the form ```<bucket-name>.s3-website-region.amazonaws.com```.
+
+   
+<img width="641" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/f97cc202-8353-4c8b-a858-277382301541">
 
