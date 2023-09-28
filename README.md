@@ -67,12 +67,12 @@ In this project, you will deploy a static website to AWS by performing the follo
 - [Access Website in Web Browser](#access-website-in-web-browser)
 
 
-## Create S3 Bucket [#create-s3-bucket]
-## Upload files to S3 Bucket
-## Secure Bucket via IAM
-## Configure S3 Bucket
-## Distribute Website via CloudFront
-## Access Website in Web Browser
+### Create S3 Bucket
+### Upload files to S3 Bucket
+### Secure Bucket via IAM
+### Configure S3 Bucket
+### Distribute Website via CloudFront
+### Access Website in Web Browser
 
 
 
