@@ -196,9 +196,28 @@ You will see warnings about making your bucket public, but **this step is requir
 > Note - If we were not learning about static website hosting, we could have made the bucket private and wouldn't have to specify any bucket access policy explicitly. In such a case, once we set up the **CloudFront distribution**, it will automatically update the current bucket access policy to access the bucket content. The CloudFront service will make this happen by using the **Origin Access Identity** user.
 
 
-### Configure S3 Bucket
-### Distribute Website via CloudFront
-### Access Website in Web Browser
+
+## Configure S3 Bucket
+
+1. Go to the Properties tab and then scroll down to edit the Static website hosting section.
+
+<img width="467" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/e0345bf5-a333-40b0-bce6-a73629f3dd69">
+
+2. Click on the “Edit” button to see the Edit static website hosting screen. Now, enable the Static website hosting, and provide the default home page and error page for your website.
+
+<img width="425" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/b1259000-3e33-485e-8e6f-fd5f42509056">
+
+> Did you notice that enabling the static website hosting requires you to make your bucket public?
+In the snapshot above, it says "For your customers to access the content at the website endpoint, you must make all your content **publicly readable**."
+
+3. For both “Index document” and “Error document”, enter “index.html” and click “Save”. After successfully saving the settings, check the **Static website hosting** section again under the **Properties** tab. You must now be able to view the <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteEndpoints.html">website endpoint</a> as shown below:
+
+<img width="533" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/a0d14b68-8556-41de-9238-ea9c21146e04">
+
+
+   
+## Distribute Website via CloudFront
+## Access Website in Web Browser
 
 
 
