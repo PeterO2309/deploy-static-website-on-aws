@@ -243,6 +243,29 @@ In the snapshot above, it says "For your customers to access the content at the 
 | Origin > Enable Origin Shield	| No | 
 | Default cache behavior	| Use default settings	| 
 | Cache key and origin requests	| Use default settings | 
+
+
+<img width="410" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/6b8fe8ae-1c3f-4a44-921d-25a229d6da0c">
+
+
+<img width="675" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/c27ec1cf-281a-44aa-b19d-8f80f0db566e">
+<img width="675" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/fd050794-55ae-4e5b-bd6d-bd1b63ac4e6a">
+<img width="675" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/2e3092b9-3eb1-4988-87cb-1b85bc102e9b">
+
+5. Leave the defaults for the rest of the options, and click “Create Distribution”. It may take up to 10 minutes for the CloudFront Distribution to get created.
+
+   _**Note**_: It may take up to **_10 minutes_** for the CloudFront Distribution to be created.
+
+6. Once the status of your distribution changes from “In Progress” to “Deployed”, copy the endpoint URL for your CloudFront distribution found in the “Domain Name” column.
+
+> **Note** - Remember, as soon as your CloudFront distribution is **Deployed**, it attaches to S3 and starts caching the S3 pages. CloudFront may take 10-30 minutes (or more) to cache the S3 page. Once the caching is complete, the CloudFront domain name URL will stop redirecting to the S3 object URL.
+
+<img width="527" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/7c162598-181c-4660-965a-eb1d47198db4">
+
+
+In this example, the Domain Name value is ```dgf7z6g067r6d.cloudfront.net```, but _**yours will be different.**_
+
+
 ## Access Website in Web Browser
 
 
