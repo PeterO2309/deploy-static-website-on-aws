@@ -71,16 +71,29 @@ In this project, you will deploy a static website to AWS by performing the follo
 
 1. Navigate to the “AWS Management Console” page, type “S3” in the “Find Services” box and then select “S3”.
 
-   <img width="284" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/5df3fef0-9a7b-454e-a430-efd432a68255">
+<img width="455" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/8b30f705-8445-41ce-b3c7-e4011a470a8b">
 
-3. The Amazon S3 dashboard displays. Click “Create bucket”.
-4. In the **General configuration**, enter a “Bucket name” and a region of your choice. Note: Bucket names must be globally unique.
-5. In the **Bucket settings for Block Public Access** section, uncheck the “Block all public access”. It will enable the public access to the bucket objects via the S3 object URL.
+2. The Amazon S3 dashboard displays. Click “Create bucket”.
+
+   <img width="599" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/5bcb9f51-16d6-4bf1-b446-0004e607ebb7
+
+3. In the **General configuration**, enter a “Bucket name” and a region of your choice. Note: Bucket names must be globally unique.
+
+   <img width="608" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/a38edaa3-3b7e-426c-b0dd-34df810f97b7">
+   
+
+4. In the **Bucket settings for Block Public Access** section, uncheck the “Block all public access”. It will enable the public access to the bucket objects via the S3 object URL.
 
   ** Note** - We are allowing public access to the bucket contents because we are going to host a static website in this bucket. Hosting requires the content should be publicly readable.
-   
+
+   <img width="461" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/80b7fa59-5b4b-43d6-9f56-47670d8e9702">
+
 5. Click “Next” and click “Create bucket”.
 6. Once the bucket is created, click on the name of the bucket to open the bucket to the contents.
+
+   <img width="535" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/ab9615b3-1ca6-4840-b526-f5738d93df30">
+   
+
 ### Upload files to S3 Bucket
 ### Secure Bucket via IAM
 ### Configure S3 Bucket
