@@ -197,6 +197,8 @@ You will see warnings about making your bucket public, but **this step is requir
 
 
 
+
+
 ## Configure S3 Bucket
 
 1. Go to the Properties tab and then scroll down to edit the Static website hosting section.
@@ -215,8 +217,32 @@ In the snapshot above, it says "For your customers to access the content at the 
 <img width="533" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/a0d14b68-8556-41de-9238-ea9c21146e04">
 
 
+
+
    
 ## Distribute Website via CloudFront
+
+1. Select “Services” from the top left corner and enter “cloud front” in the “Find a service by name or feature” text box and select “CloudFront”.
+
+<img width="460" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/a729e205-cdc8-41b6-85a4-293670b34104">
+
+
+2. From the CloudFront dashboard, click “Create Distribution”.
+
+<img width="476" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/21d53feb-3e54-4aa4-b53e-9ca70610dbf9">
+
+3. For “Select a delivery method for your content”, click “Get Started”.
+
+<img width="459" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/35d865f3-ab1c-435e-af62-64a9232c933d">
+
+4. Use the following details to create a distribution:
+
+| Field	| Value | 
+| ----------------------------- | -----------------------------------------------------------------------------------------------------------------------------   | 
+| Origin > Domain Name | 	Don't select the bucket from the dropdown list. Paste the Static website hosting endpoint of the form `.s3-website-region.amazonaws.com`| 
+| Origin > Enable Origin Shield	| No | 
+| Default cache behavior	| Use default settings	| 
+| Cache key and origin requests	| Use default settings | 
 ## Access Website in Web Browser
 
 
