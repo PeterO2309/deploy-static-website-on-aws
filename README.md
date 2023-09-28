@@ -58,14 +58,12 @@ In this project, you will deploy a static website to AWS by performing the follo
 = Node.js (Javascript) (Backend)
 
 
-## Table of Contents
+## Create S3 Bucket 
+## Upload files to S3 Bucket
+## Secure Bucket via IAM
+## Configure S3 Bucket
+## Distribute Website via CloudFront
+## Access Website in Web Browser
 
-- [Create S3 Bucket](#https://github.com/PeterO2309/deploy-static-website-on-aws/tree/main#create-s3-bucket) 
-- [Upload files to S3 Bucket](#upload-files-to-s3-bucket)
-- [Secure Bucket via IAM](#secure-bucket-via-iam)
-- [Configure S3 Bucket](#configure-s3-bucket)
-- [Distribute Website via CloudFront](#distribute-website-via-cloudfront)
-- [Access Website in Web Browser](#access-website-in-web-browser)
 
-### Create S3 Bucket
-dgasegeg
+
