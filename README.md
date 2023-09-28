@@ -67,7 +67,7 @@ In this project, you will deploy a static website to AWS by performing the follo
 - [Access Website in Web Browser](#access-website-in-web-browser)
 
 
-### Create S3 Bucket
+## Create S3 Bucket
 
 1. Navigate to the “AWS Management Console” page, type “S3” in the “Find Services” box and then select “S3”.
 
@@ -99,7 +99,8 @@ In this project, you will deploy a static website to AWS by performing the follo
    
 
 
-### Upload files to S3 Bucket
+
+## Upload files to S3 Bucket
 
 1. Once the bucket is open to its contents, click the “Upload” button.
 
@@ -107,9 +108,12 @@ In this project, you will deploy a static website to AWS by performing the follo
 
 2. Click the "Add files" and “Add folder” button, and upload the Student-ready starter code (https://drive.google.com/open?id=15vQ7-utH7wBJzdAX3eDmO9ls35J5_sEQ) folder content from your local computer to the S3 bucket.
 
+
    <img width="611" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/46f189c4-5112-4f00-8c6f-41f991ca4753">
 
+
    <img width="530" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/db38026f-2f2a-456b-aedf-a902538472d3">
+   
 
    <img width="539" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/948ea64b-977b-4ee8-8ded-f9f406158fc4">
 
@@ -133,7 +137,7 @@ Use CLI commands to upload the files and folders:
      ```
       aws configure list
       aws configure 
-     aws configure set aws_session_token "<TOKEN>" --profile default 
+      aws configure set aws_session_token "<TOKEN>" --profile default 
      ```
 
   1. Upload files
@@ -156,7 +160,42 @@ Use CLI commands to upload the files and folders:
      ```
 
 
-### Secure Bucket via IAM
+
+## Secure Bucket via IAM
+
+1. Click on the “Permissions” tab.
+
+<img width="422" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/494d6503-1d0a-4cfc-aec3-d0c9f93f3c08">
+
+
+2. The “Bucket Policy” section shows it is empty. Click on the Edit button.
+
+<img width="503" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/b9e7f9cb-14b0-4802-a08e-bfae75c559ab">
+
+
+3. Enter the following bucket policy replacing your-website with the name of your bucket and click “Save”.
+
+```
+ {
+  "Version":"2012-10-17",
+  "Statement":[
+    {
+      "Sid":"AddPerm",
+      "Effect":"Allow",
+      "Principal": "*",
+      "Action":["s3:GetObject"],
+      "Resource":["arn:aws:s3:::your-website/*"]
+    }
+  ]
+}
+```
+
+
+You will see warnings about making your bucket public, but **this step is required for static website hosting.**
+
+> Note - If we were not learning about static website hosting, we could have made the bucket private and wouldn't have to specify any bucket access policy explicitly. In such a case, once we set up the **CloudFront distribution**, it will automatically update the current bucket access policy to access the bucket content. The CloudFront service will make this happen by using the **Origin Access Identity** user.
+
+
 ### Configure S3 Bucket
 ### Distribute Website via CloudFront
 ### Access Website in Web Browser
