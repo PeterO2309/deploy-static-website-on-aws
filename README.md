@@ -1,7 +1,7 @@
 # deploy-static-website-on-aws
 
 
-## Project Overview
+### Project Overview
 The cloud is perfect for hosting static websites that only include HTML, CSS, and JavaScript files that require no server-side processing. The whole project has two major intentions to implement:
 
 - Hosting a static website on S3 and
@@ -17,19 +17,19 @@ In this project, you will deploy a static website to AWS by performing the follo
 4. You will access your website in a browser using the unique CloudFront endpoint.
 
 
-## Prerequisites:
+### Prerequisites:
 - AWS Account
 - Student-ready starter code - Download and unzip this file via https://drive.google.com/file/d/15vQ7-utH7wBJzdAX3eDmO9ls35J5_sEQ/view. 
 
 
-## Topics Covered:
+### Topics Covered:
 - S3 bucket creation
 - S3 bucket configuration
 - Website distribution via CloudFront
 - Access website via web browser
 
 
-##Dependencies
+###Dependencies
 ####### Cloud Services
 
 - Amazon Web Services S3 - Resource hosting and deployments
@@ -57,8 +57,17 @@ In this project, you will deploy a static website to AWS by performing the follo
 - Node.js (Javascript) (Backend)
 = Node.js (Javascript) (Backend)
 
+## Table of Contents
 
-## Create S3 Bucket 
+- [Create S3 Bucket](#create-s3-bucket) 
+- [Upload files to S3 Bucket](#upload-files-to-s3-bucket)
+- [Secure Bucket via IAM](#secure-bucket-via-iam)
+- [Configure S3 Bucket](#configure-s3-bucket)
+- [Distribute Website via CloudFront](#distribute-website-via-cloudfront)
+- [Access Website in Web Browser](#access-website-in-web-browser)
+
+
+## [Create S3 Bucket](#create-s3-bucket)
 ## Upload files to S3 Bucket
 ## Secure Bucket via IAM
 ## Configure S3 Bucket
