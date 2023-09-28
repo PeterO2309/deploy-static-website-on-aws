@@ -68,6 +68,19 @@ In this project, you will deploy a static website to AWS by performing the follo
 
 
 ### Create S3 Bucket
+
+1. Navigate to the “AWS Management Console” page, type “S3” in the “Find Services” box and then select “S3”.
+
+   <img width="284" alt="image" src="https://github.com/PeterO2309/deploy-static-website-on-aws/assets/37739166/5df3fef0-9a7b-454e-a430-efd432a68255">
+
+3. The Amazon S3 dashboard displays. Click “Create bucket”.
+4. In the **General configuration**, enter a “Bucket name” and a region of your choice. Note: Bucket names must be globally unique.
+5. In the **Bucket settings for Block Public Access** section, uncheck the “Block all public access”. It will enable the public access to the bucket objects via the S3 object URL.
+
+  ** Note** - We are allowing public access to the bucket contents because we are going to host a static website in this bucket. Hosting requires the content should be publicly readable.
+   
+5. Click “Next” and click “Create bucket”.
+6. Once the bucket is created, click on the name of the bucket to open the bucket to the contents.
 ### Upload files to S3 Bucket
 ### Secure Bucket via IAM
 ### Configure S3 Bucket
